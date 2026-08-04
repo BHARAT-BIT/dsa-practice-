@@ -7,7 +7,7 @@ def palindrome_check(s):
             left +=1
         while left<right  and not s[right].isalnum():
             right += 1 
-        if s[left] != s[right]:
+        if s[left].lower() != s[right].lower():
             return False 
         else:
             left += 1 
