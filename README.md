@@ -24,3 +24,4 @@ Currently on **Day 22+** — actively updated daily.
 | Day | Topic | Folder | Status |
 |-----|-------|--------|--------|
 | 22  | Singly Linked List — Node, Append, Traverse, Insert Head, Delete Value | [Day22_LinkedList](./Day22_LinkedList) | ✅ |
+|  23 | Linked List Reversal (iterative + recursive) + Floyd's Cycle Detection | ✅
