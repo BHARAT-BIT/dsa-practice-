@@ -1,3 +1,9 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
 def merge_two_sorted(l1, l2):
     dummy = Node(0)
     tail = dummy
