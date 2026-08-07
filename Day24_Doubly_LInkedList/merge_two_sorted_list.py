@@ -1,7 +1,3 @@
-class Node:
-    def __init__(self, data):
-        self.data = data 
-
 def merge_two_sorted(l1, l2):
     dummy = Node(0)
     tail = dummy
@@ -12,15 +8,19 @@ def merge_two_sorted(l1, l2):
     while p1 and p2:
         if p1.data <= p2.data:
             tail.next = p1
+            p1.prev = tail          # backward link fix
             p1 = p1.next
         else:
             tail.next = p2
+            p2.prev = tail          # backward link fix
             p2 = p2.next
         tail = tail.next
     
-    if p1 is None:
-        tail.next = p2
-    else:
-        tail.next = p1
+    # leftover chunk attach karna hai
+    remaining = p2 if p1 is None else p1
+    tail.next = remaining
+    remaining.prev = tail           # yahan bhi backward link fix zaroori hai
+    
+    dummy.next.prev = None          # naya head ka prev None hona chahiye (yaad hai humara rule?)
     
     return dummy.next
