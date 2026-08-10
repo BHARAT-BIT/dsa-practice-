@@ -35,11 +35,11 @@ class LinkedList:
             curr.next = prev 
             prev = curr 
             curr = next_node
-        return prev   
+        return prev               #This marks the node where the middle is 
 
     def is_palindrome(self):
-        mid = self.middle()
-        second_half = self.reverse_from(mid)
+        mid = self.middle()    #This takes value from function middle and save it in mid  
+        second_half = self.reverse_from(mid)        #This takes value from def middle and put it in functon reverse_from to reverse the 2nd half 
 
         p1 = self.head
         p2 = second_half
