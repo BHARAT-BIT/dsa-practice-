@@ -1,4 +1,11 @@
+class Node:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 def remove_nth_from_end(head, n):
+
     dummy = Node(0)
     dummy.next = head
     fast = slow = dummy
