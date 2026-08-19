@@ -1,3 +1,5 @@
+#Not Optimal 
+
 class Node:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -35,3 +37,27 @@ def get_intersection_node(headA, headB):
     # Step 3: either both are None (no intersection)
     # or both point to the same intersection node
     return ptrA
+
+
+
+# Optimal 
+
+class Solution:
+    def getIntersectionNode(self, headA, headB):
+        
+        p1 = headA
+        p2 = headB
+        
+        while p1 != p2:
+            
+            if p1:
+                p1 = p1.next
+            else:
+                p1 = headB
+                
+            if p2:
+                p2 = p2.next
+            else:
+                p2 = headA
+        
+        return p1
