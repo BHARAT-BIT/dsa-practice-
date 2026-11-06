@@ -13,7 +13,7 @@ This repo tracks my daily DSA practice — from Python fundamentals to advanced 
 Build strong fundamentals in Python + DSA, solve topic-tagged problems (not random grinding), and be interview-ready in 84 days.
 
 ## 🚀 Status
-Currently on **Day 29+** — actively updated daily.
+Currently on **Day 43+** — actively updated daily.
 
 ---
 *Following a structured curriculum, not tutorial-hopping. Consistency > intensity.*
